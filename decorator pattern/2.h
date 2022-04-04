@@ -27,6 +27,7 @@ class BrownRiceDumpling: public IDumpling{
 class DumplingDecorator: public IDumpling{
     protected:
         IDumpling* mDumpling;
+    public:
         ~DumplingDecorator(){
             delete mDumpling;
         };

@@ -33,7 +33,7 @@ class CheeseMeatWhiteDumpling: public MeatWhiteDumpling{
 class SaltedEggCheeseMeatWhiteDumpling: public CheeseMeatWhiteDumpling{
     public:
         string doDumpling(){
-            return MeatWhiteDumpling::doDumpling() + " + trung muoi";
+            return CheeseMeatWhiteDumpling::doDumpling() + " + trung muoi";
         }
 };
 
