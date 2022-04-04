@@ -4,8 +4,7 @@ using namespace std;
 
 class GoBehavior{
     public:
-        virtual void go(){
-        }
+        virtual void go(){}
 };
 
 class fly: public GoBehavior{
