@@ -36,6 +36,23 @@ class vehicle{
         void performGo(){
             goBehavior->go();
         };
+        void set(){
+            cout << "1: is ride, 2 is fly, 3 is row: ";
+            int n;
+            cin >> n;
+            if(n == 1)
+                goBehavior = new ride;
+            else if (n==2){
+                goBehavior = new fly;
+            }
+            else if (n==3){
+                goBehavior = new row;
+            }
+            
+        }
+        ~vehicle(){
+            delete goBehavior;
+        };
 };
 
 class car: public vehicle{
